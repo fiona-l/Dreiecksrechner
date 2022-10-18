@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Dreiecksrechner-Nachname</title>
+	  <link rel="stylesheet" type="text/css" href="index.css">
+	  <script src="script.js"></script>
+	</head>	
+	<body>
+		<fieldset id="rechner">
+			<legend>Grafische Darstellung</legend>
+			<canvas id="graf"></canvas>
+		</fieldset>
+
+		<fieldset id="eingabe">
+			<legend>Eingabe</legend>
+			<select id="seite">
+				<option value="hypothenuse" selected>Hypothenuse:</option>
+				<option value="gegenkathete">Gegenkathete &alpha;:</option>
+				<option value="ankathete">Ankathete &alpha;:</option>
+			</select>
+			<input id="seiten_laenge" type="number" min="0.01" step="0.01" value="25">
+			<span>mm</span>
+
+			<label for="winkel-alpha">Winkel &alpha;:</label>
+			<input id="winkel-alpha" type="number" min="0.01" max="89.99" step="0.01" value="10">
+			<span>°</span>
+		</fieldset>
+
+		<fieldset id="ausgabe">
+			<legend>Ausgabe</legend>
+
+			<label for="winkel-beta">Winkel &beta;:</label>
+			<input id="winkel-beta" type="text" readonly>
+			<span>°</span>
+
+			<label for="gegenkathete-alpha" data-gegenkathete>Gegegnkathete &alpha;:</label>
+			<input id="gegenkathete-alpha" data-gegenkathete type="text" readonly>
+			<span data-gegenkathete>mm</span>
+
+			<label for="ankathete-alpha" data-ankathete>Ankathete &alpha;</label>
+			<input id="ankathete-alpha" data-ankathete type="text" readonly>
+			<span data-ankathete>mm</span>
+
+			<label for="hypothenuse" data-hypothenuse>Hypothenuse:</label>
+			<input id="hypothenuse" data-hypothenuse type="text" readonly>
+			<span data-hypothenuse>mm</span>
+
+			<input type="button" value="Berechnung">
+		</fieldset>
+
+		<img src="Logo_gr_tr.jpg" alt="bkt-logo">		
+	</body>
+</html>

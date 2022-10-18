@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	padding-top: 1em;
+    background-color: #444;
+  	color: white;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 1.5rem;
+}
+
+body > * {
+	width: 80vw;
+	max-width: 600px;
+}
+
+fieldset {
+	background-color: black;
+	padding: 1.5rem 1rem 1rem;
+}
+
+fieldset:not(:first-child) {
+	display: grid;
+	grid-template-columns: 1fr 2fr min-content;
+	gap: 1rem;
+}
+
+canvas {
+	width: 100%;
+}
+
+img {
+	display: block;
+	width: 150px;
+}
+
+legend {
+	border: 2px solid white;
+	background-color: DodgerBlue;
+	color: white;
+	padding: 5px 10px;
+}
+
+.d-none {
+	display: none;
+}
